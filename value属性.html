@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>value属性</title>
+</head>
+<body>
+<div class="box">
+<input type="text" id="txt">
+<input type="text">
+<input type="text">
+<input type="text">
+</div>
+
+<input type="button" value="按钮" id="btn">
+
+<script>
+    var box=document.getElementById("box");
+
+    var btn=document.getElementById("btn");
+
+    var text=document.getElementsByTagName("txt");
+
+    var inputs=box.getElementsByTagName("input");
+
+    for(var i=0;i<inputs.length;i++){
+
+        var input=inputs[i];
+
+        input.value=i;
+
+    }
+
+    btn.onclick=function () {
+
+        var str ="";
+
+        for(var i=0;i<inputs.length;i++){
+
+            str += inputs[i].value;
+        }
+        console.log(str);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

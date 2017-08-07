@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本框焦点</title>
+</head>
+<body>
+<input type="text" id="txt" value="金融">
+<input type="button"  value="搜索">
+<script>
+
+var txt=document.getElementById("txt");
+
+    txt.onfocus=function () {
+
+        if(this.value==="金融"){
+
+        this.value="";
+
+        }
+
+    }
+
+      txt.onblur=function () {
+
+          if(this.value===""){
+
+          this.value="金融"
+          }
+
+      }
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

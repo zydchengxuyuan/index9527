@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>批量禁用文本框</title>
+</head>
+<body>
+<input type="text">
+<input type="text">
+<input type="text">
+<input type="button" value="按钮" id="btn">
+
+<script>
+
+    var btn=document.getElementById("btn");
+
+    var inputs=document.getElementsByTagName("input");
+
+    btn.onclick=function () {
+
+        for(var i=0;i<inputs.length;i++){
+
+            inputs[i]= var input;
+
+            if(input.type==="text"){
+
+                input.disabled=true;
+            }
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
